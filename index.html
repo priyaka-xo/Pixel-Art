@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pixel Art Maker</title>
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Roboto" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Pixel Art Maker</h1>
+  
+  <h2>Select Size of Canvas Grid</h2>
+  <form id="sizePicker"> 
+    <div class="canvas height">
+      <label for="inputHeight">Grid Height:</label>
+      <input type="number" name="height" id="inputHeight" value="11" min="1" max="100" step="1">
+    </div><!-- .canvas .height -->
+    <div class="canvas width">
+      <label for="inputWidth">Grid Width:</label>
+      <input type="number" name="width" id="inputWidth" value="11" min="1" max="100" step="1">
+    </div><!-- .canvas .width -->
+    <div class="canvas button">
+      <input type="submit" id="gridButton"></input>
+    </div><!-- .canvas .button -->
+  </form><!-- #sizePicker -->
+  
+  <h2>Select Color</h2>
+  <form id="colorWell">
+    <div class="pixel color">
+      <input type="color" id="colorPicker" value="#000000">
+    </div><!-- .pixel .color -->
+  </form><!-- #colorPicker -->
+  
+  <h2>Custom Design Canvas</h2>
+  <p>Click to add color; double-click to remove color</p>
+  <table id="pixelCanvas"></table>
+  
+  <script src="designs.js"></script>
+</body>
+</html>

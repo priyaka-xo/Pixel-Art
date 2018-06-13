@@ -1,0 +1,98 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: Monoton, sans-serif;
+    font-size: 96px;
+    margin: 0.2em;
+    padding: 0.25em;
+    border-radius: 0.5em;
+    background:
+      linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+      linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+h2 {
+    font-family: Roboto, sans-serif;
+    font-size: 32;
+    margin: 2em 0 0.50em;
+}
+
+form {
+  /* To center the form on the page */
+  margin: 0 auto;
+  width: 375px;
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 5px solid #ccc;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  /* To make sure that all labels are the same size, font */
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+  font: 18px roboto, sans-serif;
+}
+
+input {
+  /* to make sure all text fields have same font settings */
+  font: 1em sans-serif;
+  /* to give the same size to all text fields */
+  width: 300px;
+  box-sizing: border-box;
+  /* to harmonize the look and feel of text field border */
+  border: 1px solid #999;
+  border-radius: 0.5em;
+}
+
+input:focus {
+  /* to give a little hightlight on active elements */
+  border-color: #000;
+}
+
+.button {
+  padding-top: 0.5em;
+}
+
+input[type=submit] {
+  font: 14px roboto, sans-serif;
+  font-weight: bolder;
+  padding: 0.25em 0.5em;
+  background:
+      linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+      linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  border-radius: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 2px solid;
+}
+
+table {
+    border-color: #000;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 3em;
+}
